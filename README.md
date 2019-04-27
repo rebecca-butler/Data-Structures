@@ -1,2 +1,2 @@
 # Data-Structures
-A collection of programs written to increase my knowledge of data structures and algorithms.
+This repository contains a variety of DS&A programs, covering topics such as stacks, queues, linked lists, binary trees, hash tables, and heaps.
