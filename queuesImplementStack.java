@@ -1,7 +1,7 @@
 import java.util.*;
 
 //an implementation of a FIFO queue as a singly linked list. two of these queues are then used to implement a stack.
-public class a1q1b<T> extends AbstractQueue<T> {
+public class queuesImplementStack<T> extends AbstractQueue<T> {
 	class Node {
 		T x;
 		Node next;
@@ -71,8 +71,8 @@ public class a1q1b<T> extends AbstractQueue<T> {
 	}	
 	
 	//create two queues, q1 and q2.
-	static Queue<Integer> q1 = new a1q1b<>();
-	static Queue<Integer> q2 = new a1q1b<>();
+	static Queue<Integer> q1 = new queuesImplementStack<>();
+	static Queue<Integer> q2 = new queuesImplementStack<>();
 	static int top;
 
 	//push method - add an element x to the top of the stack.
@@ -107,7 +107,7 @@ public class a1q1b<T> extends AbstractQueue<T> {
         for (int i = 0; i < size; i++) {
         	System.out.print("item " + i + ": ");
             item = scan.nextInt();
-            a1q1b.push(item);
+            queuesImplementStack.push(item);
         }
 
         //print queue.
@@ -119,7 +119,7 @@ public class a1q1b<T> extends AbstractQueue<T> {
         int popNum = scan.nextInt();
         scan.nextLine();
 		for (int i = 0; i < popNum; i++) {
-			a1q1b.pop();
+			queuesImplementStack.pop();
 		}
 		
 		//print queue with items popped off.
