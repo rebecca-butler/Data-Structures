@@ -95,35 +95,38 @@ public class queuesImplementStack<T> extends AbstractQueue<T> {
 
 	//driver code to test implementation.
 	public static void main(String[] args) {
-		//create a Scanner object for user input.
-        Scanner scan = new Scanner(System.in);
+		
+	//create a Scanner object for user input.
+    Scanner scan = new Scanner(System.in);
         
-        //get size of queue and items from user input, and perform push operation.
-        System.out.print("size of queue: ");
-        int size = scan.nextInt();
-        scan.nextLine();
+    //get size of queue and items from user input, and perform push operation.
+    System.out.print("size of queue: ");
+    int size = scan.nextInt();
+    scan.nextLine();
         
-        int item;
-        for (int i = 0; i < size; i++) {
-        	System.out.print("item " + i + ": ");
-            item = scan.nextInt();
-            queuesImplementStack.push(item);
-        }
+    int item;
+    for (int i = 0; i < size; i++) {
+    	System.out.print("item " + i + ": ");
+    	item = scan.nextInt();
+    	queuesImplementStack.push(item);
+	}
 
-        //print queue.
-        System.out.println("queue: ");
-		System.out.println(q1);
+	//print queue.
+    System.out.println("queue: ");
+	System.out.println(q1);
 		
-		//get number of items to pop from queue and perform pop operation.
-        System.out.print("number of items to pop from queue: ");
-        int popNum = scan.nextInt();
-        scan.nextLine();
-		for (int i = 0; i < popNum; i++) {
-			queuesImplementStack.pop();
-		}
+	//get number of items to pop from queue and perform pop operation.
+    System.out.print("number of items to pop from queue: ");
+    int popNum = scan.nextInt();
+    scan.nextLine();
 		
-		//print queue with items popped off.
-		System.out.println("queue with items popped off: ");
-		System.out.println(q1);
+	for (int i = 0; i < popNum; i++) {
+		queuesImplementStack.pop();
+	}
+		
+	//print queue with items popped off.
+	System.out.println("queue with items popped off: ");
+	System.out.println(q1);
+		
 	}
 }
